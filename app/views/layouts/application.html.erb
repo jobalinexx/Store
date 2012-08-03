@@ -30,12 +30,15 @@
       <!-- Everything you want hidden at 940px or less, place within here -->
       <div class="nav-collapse">
 	<ul class="nav">
-      	  <li><%= link_to "Browse Products", products_path %></li>
+      	  <li class="active"><%= link_to "Browse Products", products_path %></li>
 	  <li><%= link_to "Price List" %></li>
 	  <li><%= link_to "Contact Us" %></li>
 	  <li><%= link_to "Cart" %></li>
 	</ul>
-      </div>
+        <p class="navbar-text pull-right">
+           <%= link_to "Sign in with Twitter", "/auth/twitter" %>
+        </p>
+     </div>
  
     </div>
   </div>
